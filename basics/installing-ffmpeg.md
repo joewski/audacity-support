@@ -14,19 +14,23 @@ Due to patent restrictions, FFmpeg cannot be distributed with Audacity itself. H
 
 You can download and install FFmpeg as follows:
 
-{% embed url="https://youtu.be/mY9wBvDgnfQ" %}
-
 {% tabs %}
 {% tab title="Windows" %}
-### Recommended installer
+### Recommended installation method
 
-1. Download the FFmpeg installer from [https://lame.buanzo.org/ffmpeg.php](https://lame.buanzo.org/ffmpeg.php)\
+Updated for Audacity 3.7.1 and above (as of 13/01//2025).
+1. Download the FFmpeg from [(https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl-shared.zip))](https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl-shared.zip)\
    For most computers, the 64-bit Windows version is correct.
-2. Run the installer. You can ignore the "unknown publisher" warning.
-3. Read and accept the license
-4. Select the location to install FFmpeg. By default FFmpeg will be installed into **C:\Program Files\FFmpeg for Audacity**
-5. Finish the installation
-6. Restart Audacity
+2. Extract the zip file to a folder.
+3. Find the bin directory.
+4. Search for the Audacity application in Windows search, and click on open file location,(you may have to click find file location again.).
+5. Create a subdirectory ffmpeg from Audacity 
+6. Copy the bin files that you unzipped to the ffmpeg directory.
+7. Start Audacity, go to edit, preferences,and  libraries from the menu in Audacity.
+8. Click on the locate button for ffmpeg library.
+9. locate the file avformat-61.dll or similar with the browse button and select it.
+10. Press OK, then OK.
+11. Finished, get a file that needs ffmpeg and test audacity work. You should be set to go now.
 
 Audacity should now automatically detect FFmpeg and allow you to use it.&#x20;
 
@@ -36,7 +40,7 @@ If you prefer a manual installation of FFmpeg you can download a ZIP file from a
 
 * [https://github.com/BtbN/FFmpeg-Builds/releases](https://github.com/BtbN/FFmpeg-Builds/releases)&#x20;
 * [https://www.gyan.dev/ffmpeg/builds/#release-builds](https://www.gyan.dev/ffmpeg/builds/#release-builds)
-* Or by compiling it from source as described here: [https://trac.ffmpeg.org/wiki/CompilationGuide](https://trac.ffmpeg.org/wiki/CompilationGuide)&#x20;
+* Or by compiling it from the source as described here: [https://trac.ffmpeg.org/wiki/CompilationGuide](https://trac.ffmpeg.org/wiki/CompilationGuide)&#x20;
 
 {% hint style="info" %}
 **Note:**&#x20;
